@@ -1,0 +1,27 @@
+{
+  "name": "forkfiy",
+  "version": "1.0.0",
+  "description": "Recipe app ",
+  "deafult": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sayed4900/forkfiy.git"
+  },
+  "author": "sayed",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sayed4900/forkfiy/issues"
+  },
+  "homepage": "https://github.com/sayed4900/forkfiy#readme",
+  "dependencies": {
+    "parcel": "^2.7.0",
+    "sass": "^1.54.3"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.7.0"
+  }
+}
