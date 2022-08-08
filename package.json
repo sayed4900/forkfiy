@@ -18,10 +18,15 @@
   },
   "homepage": "https://github.com/sayed4900/forkfiy#readme",
   "dependencies": {
+    "core-js": "^3.24.1",
     "parcel": "^2.7.0",
+    "regenerator-runtime": "^0.13.9",
     "sass": "^1.54.3"
   },
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.7.0"
+    "@parcel/transformer-sass": "^2.7.0",
+    "buffer": "^6.0.3",
+    "process": "^0.11.10",
+    "util": "^0.12.4"
   }
 }
