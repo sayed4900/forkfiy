@@ -27,11 +27,14 @@ const renderSpinner = function (parentEL) {
 };
 const showRecipe = async function () {
   try {
-    1; //Load the recipe
+    const id = window.location.hash.slice(1);
+    console.log(id);
+    if (!id) return;
+    //Load the recipe
     renderSpinner(recipeContainer);
     const res = await fetch(
       // 'https://forkify-api.herokuapp.com/api/v2/recipes/5ed6604591c37cdc054bcd09'
-      'https://forkify-api.herokuapp.com/api/v2/recipes/5ed6604591c37cdc054bcc13'
+      `https://forkify-api.herokuapp.com/api/v2/recipes/${id}`
     );
     const data = await res.json();
     if (!res.ok) throw new Error(`${data.message} (${res.status})`);
@@ -153,4 +156,8 @@ const showRecipe = async function () {
     console.log(e);
   }
 };
-showRecipe();
+
+['hashchange', 'load'].forEach(event =>
+  window.addEventListener(event, showRecipe)
+);
+//The hashchange event is fired when the fragment identifier of the URL has changed (the part of the URL beginning with and following the # symbol)
