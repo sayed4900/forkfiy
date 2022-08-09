@@ -19,6 +19,7 @@
   "homepage": "https://github.com/sayed4900/forkfiy#readme",
   "dependencies": {
     "core-js": "^3.24.1",
+    "fractional": "^1.0.0",
     "parcel": "^2.7.0",
     "regenerator-runtime": "^0.13.9",
     "sass": "^1.54.3"
