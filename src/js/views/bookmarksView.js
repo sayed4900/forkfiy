@@ -19,11 +19,3 @@ class BookmarksView extends View {
 }
 
 export default new BookmarksView();
-
-/*
-<div class="preview__user-generated">
-              <svg>
-                <use href="${icons}#icon-user"></use>
-              </svg>
-            </div>
-             */
